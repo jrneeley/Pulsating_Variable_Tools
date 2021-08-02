@@ -1,0 +1,14 @@
+data_dir = 'test_data/vv124/'
+plot_lmc = True 
+DM = 25.8 
+ext_mag1 = 0.052 
+ext_mag2 = 0.024 
+catalog = data_dir+'vv124_bi_cal.raw.tran.radec'
+image = data_dir+'images/montage_fixed.fits'
+
+image_limits = [0,1000]
+montage_x_offset = 0 
+montage_y_offset = 0
+HEIGHT = 800 
+WIDTH = 1500 
+ 
