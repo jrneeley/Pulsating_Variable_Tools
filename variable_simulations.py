@@ -1,13 +1,16 @@
+'''
+    File name: variable_simulation.py
+    Author: Jillian Neeley
+    Date last modified: 8/1/2021
+    Python Version: 3.6
+'''
+
 import numpy as np
 import matplotlib.pyplot as plt
-#import statsmodels.api as sm
-#from astropy.stats import sigma_clip
 import warnings
 from astropy.utils.exceptions import AstropyWarning
 warnings.simplefilter('ignore', category=AstropyWarning)
 warnings.filterwarnings('ignore')
-#import sys
-#import os
 import random
 import seaborn as sns
 sns.set_theme()

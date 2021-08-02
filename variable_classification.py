@@ -1,3 +1,10 @@
+'''
+    File name: variable_classification.py
+    Author: Jillian Neeley
+    Date last modified: 8/1/2021
+    Python Version: 3.6
+'''
+
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.gridspec import GridSpec

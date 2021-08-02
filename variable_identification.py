@@ -1,9 +1,16 @@
+'''
+    File name: variable_identification.py
+    Author: Jillian Neeley
+    Date last modified: 8/1/2021
+    Python Version: 3.6
+'''
+
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy import stats
 from progress.bar import Bar
 from astropy.stats import sigma_clip
-import AstroTools as at
+#import AstroTools as at
 import os
 
 # Calculate the weighted mean, as defined by Peter Stetson
@@ -386,8 +393,9 @@ def find_vars(ids, chip, data, mags_relative, frame_flags, clean=False, plot=Tru
         fig, ax = plt.subplots(1,1)
         color = data['mag_sw'][:,0] - data['mag_sw'][:,1]
         mag = data['mag_sw'][:,1]
-        at.AstroPlots.plot_cmd(color, mag, ylim=[np.nanmin(mag), np.nanmax(mag)],
-            plt_axes=ax, cmap=plt.cm.Greys, cbar_scale='log', cbar_min=-1)
+        #at.AstroPlots.plot_cmd(color, mag, ylim=[np.nanmin(mag), np.nanmax(mag)],
+        #    plt_axes=ax, cmap=plt.cm.Greys, cbar_scale='log', cbar_min=-1)
+        ax.scatter(color, mag, s=1, alpha=0.3, color='k')
         ax.scatter(color[candidates], mag[candidates], s=4, color='r', alpha=0.7)
         ax.set_xlabel('{} - {}'.format(filters[0], filters[1]))
         ax.set_ylabel('{}'.format(filters[1]))
