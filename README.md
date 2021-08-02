@@ -1,5 +1,5 @@
 # Variable-Star-Analysis
-Routines for the identification, classification, and simulation of variable stars. This software writes and reads light 
+Routines for the identification, classification, and simulation of variable stars (Neeley et al. 2021). This software writes and reads light 
 curve files that are compatible with FITLC (Sarajedini et al. 2009), but can be modified fairly easily to work with other 
 period fitting programs. In order to use this software without modification, you need to replicate the directory structure 
 and files seen in test_data/vv124. 
